@@ -18,9 +18,6 @@ public class CityController {
     public String getCityInfo(@PathVariable("city") String cityName, Model model) { 
         // City Service class returns a city info object. 
         CityInfo cityInfo = cityService.getCityInfo(cityName);
-        System.out.println("%%%%%%%%%%%%%%%%%%%%%%%%%%%%");
-        System.out.println(cityName);
-        System.out.println("%%%%%%%%%%%%%%%%%%%%%%%%%%%%");
         model.addAttribute("cityInfo", cityInfo);
         return "city_info";
   

@@ -23,8 +23,6 @@ public class CityInfo {
        this.temp = temp;
    }
    
-
-
 public long getID() {
        return ID;
    }
